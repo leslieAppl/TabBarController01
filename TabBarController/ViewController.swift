@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         //Only need to do is to set value on the SecondViewController
         //Don't need to perform segue here
         //Because, TabBarController will do that.
-        //There are different mission. One is about Data, the other is about segue.
+        //There are tow different missions. One is about Data, the other is about segue.
         let list = tabBarController?.viewControllers!
         let controller = list?[1] as! SecondViewController
         controller.myProperty = 0
