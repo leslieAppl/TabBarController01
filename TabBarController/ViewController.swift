@@ -9,12 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var counter = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
-
+    @IBAction func updateBadge(_ sender: UIButton) {
+        let item = tabBarItem
+        item?.badgeValue = String(counter)
+        counter += 1
+    }
 }
 
