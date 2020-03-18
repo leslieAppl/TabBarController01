@@ -12,6 +12,9 @@ class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //MARK: - UITabBarController Delegate
+        delegate = self
+        
         //MARK: - UITabBar
         let bar = tabBar
         
@@ -27,4 +30,16 @@ class TabBarController: UITabBarController {
         tab?.badgeValue = String(20)
     }
 
+}
+
+extension TabBarController: UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        let list = viewControllers!
+        let controller = list[1]
+        if viewController == controller {
+            print("It's Settings")
+        }
+    }
+    
+    
 }
