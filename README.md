@@ -1,8 +1,25 @@
 # Tab Bar Controller
 
+## Here becomes tow different missions in the TabBarController. 
+One is about Data sending in the UIViewController, 
+the other is about Segue ViewController in the UITabBarController!!
+- Using UIViewController.tabBarController?.viewControllers property
+
+        class ViewController: UIViewController {
+                        
+            @IBAction func showNextViewBtnPressed(_ sender: UIButton) {
+                //Only need to do is to set value on the SecondViewController
+                //Don't need to perform segue here
+                //Because, TabBarController will do that.
+                //There are tow different missions. One is about Data, the other is about segue.
+                let list = tabBarController?.viewControllers!
+                let controller = list?[1] as! SecondViewController
+                controller.myProperty = 0
+            }
+        }
+
 - Using UITabBarController.tabBarItem property
 - using UITabBarController.viewControllers property
-- Using UIViewController.tabBarController?.viewControllers property
         
         class TabBarController: UITabBarController {
 
@@ -26,19 +43,6 @@
                 tab?.badgeValue = String(20)
             }
 
-        }
-
-        class ViewController: UIViewController {
-                        
-            @IBAction func showNextViewBtnPressed(_ sender: UIButton) {
-                //Only need to do is to set value on the SecondViewController
-                //Don't need to perform segue here
-                //Because, TabBarController will do that.
-                //There are tow different missions. One is about Data, the other is about segue.
-                let list = tabBarController?.viewControllers!
-                let controller = list?[1] as! SecondViewController
-                controller.myProperty = 0
-            }
         }
 
 - Using UITabBarController subclass
