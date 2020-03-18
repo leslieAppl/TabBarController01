@@ -14,6 +14,7 @@
 		CE963DD62421E670005FDB26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE963DD52421E670005FDB26 /* Assets.xcassets */; };
 		CE963DD92421E670005FDB26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE963DD72421E670005FDB26 /* LaunchScreen.storyboard */; };
 		CE963DE124221796005FDB26 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE963DE024221796005FDB26 /* TabBarController.swift */; };
+		CE963DE324221D15005FDB26 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE963DE224221D15005FDB26 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CE963DD82421E670005FDB26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE963DDA2421E670005FDB26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE963DE024221796005FDB26 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		CE963DE224221D15005FDB26 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				CE963DCE2421E66F005FDB26 /* SceneDelegate.swift */,
 				CE963DE024221796005FDB26 /* TabBarController.swift */,
 				CE963DD02421E66F005FDB26 /* ViewController.swift */,
+				CE963DE224221D15005FDB26 /* SecondViewController.swift */,
 				CE963DD22421E66F005FDB26 /* Main.storyboard */,
 				CE963DD52421E670005FDB26 /* Assets.xcassets */,
 				CE963DD72421E670005FDB26 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				CE963DD12421E66F005FDB26 /* ViewController.swift in Sources */,
 				CE963DE124221796005FDB26 /* TabBarController.swift in Sources */,
 				CE963DCD2421E66F005FDB26 /* AppDelegate.swift in Sources */,
+				CE963DE324221D15005FDB26 /* SecondViewController.swift in Sources */,
 				CE963DCF2421E66F005FDB26 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

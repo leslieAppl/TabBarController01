@@ -26,15 +26,32 @@
                                     <color key="titleColor" red="1" green="0.59851241440000003" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="updateBadge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pcK-7r-kWe"/>
+                                    <action selector="updateBadgeBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pcK-7r-kWe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7G-XU-6uj">
+                                <rect key="frame" x="0.0" y="112" width="414" height="60"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="u6e-RE-p7Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
+                                <state key="normal" title="Show Next View">
+                                    <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showNextViewBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jaf-qI-YUr"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.69803921570000005" green="0.86666666670000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jcF-t0-2gf" secondAttribute="trailing" id="Hbw-BC-wON"/>
                             <constraint firstItem="jcF-t0-2gf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WXf-57-U6X"/>
                             <constraint firstItem="jcF-t0-2gf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pth-Lj-EEw"/>
+                            <constraint firstItem="T7G-XU-6uj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qkE-r3-Ovz"/>
+                            <constraint firstItem="T7G-XU-6uj" firstAttribute="top" secondItem="jcF-t0-2gf" secondAttribute="bottom" constant="8" id="s5u-kg-n7I"/>
+                            <constraint firstItem="T7G-XU-6uj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="y7n-W1-x1A"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -44,14 +61,52 @@
             </objects>
             <point key="canvasLocation" x="-312" y="854"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="TBd-4w-qkQ">
             <objects>
-                <viewController id="YQt-4j-ZhT" sceneMemberID="viewController">
+                <viewController id="YQt-4j-ZhT" customClass="SecondViewController" customModule="TabBarController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ArA-eE-eGF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNh-wP-HnN">
+                                <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="OZa-F7-w6b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
+                                <state key="normal" title="Show This View">
+                                    <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showSelfBtnPressed:" destination="YQt-4j-ZhT" eventType="touchUpInside" id="ECG-rJ-srG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWu-gE-YZN">
+                                <rect key="frame" x="0.0" y="112" width="414" height="60"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="rRe-mR-ntE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
+                                <state key="normal" title="Not show this View">
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="notShowSelfBtnPressed:" destination="YQt-4j-ZhT" eventType="touchUpInside" id="2hb-RB-H2y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95690070689999995" green="0.99705451730000005" blue="0.40761075520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="nWu-gE-YZN" firstAttribute="trailing" secondItem="2hu-KE-wmF" secondAttribute="trailing" id="7eC-d0-fzK"/>
+                            <constraint firstItem="nNh-wP-HnN" firstAttribute="trailing" secondItem="2hu-KE-wmF" secondAttribute="trailing" id="Fcn-h4-14a"/>
+                            <constraint firstItem="nWu-gE-YZN" firstAttribute="top" secondItem="nNh-wP-HnN" secondAttribute="bottom" constant="8" id="TUm-ry-NKA"/>
+                            <constraint firstItem="nNh-wP-HnN" firstAttribute="top" secondItem="2hu-KE-wmF" secondAttribute="top" id="WBp-nZ-0HV"/>
+                            <constraint firstItem="nNh-wP-HnN" firstAttribute="leading" secondItem="2hu-KE-wmF" secondAttribute="leading" id="bph-Wi-nzC"/>
+                            <constraint firstItem="nWu-gE-YZN" firstAttribute="leading" secondItem="2hu-KE-wmF" secondAttribute="leading" id="v8D-DK-WHa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2hu-KE-wmF"/>
                     </view>
                     <tabBarItem key="tabBarItem" image="iconsettings" id="dcr-2e-0Yd"/>

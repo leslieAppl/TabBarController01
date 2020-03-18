@@ -41,5 +41,17 @@ extension TabBarController: UITabBarControllerDelegate {
         }
     }
     
-    
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        //Decide if the view controller’s tab should be selected or the current tab should remain active.
+        if let controller = viewController as? SecondViewController {
+            let control = controller.myProperty
+            if control != 0 {
+                //only if the property is not equal to 0, do not show this view
+                return false
+            }
+        }
+        
+        // else return true to show this view
+        return true
+    }
 }

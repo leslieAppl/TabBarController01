@@ -17,10 +17,21 @@ class ViewController: UIViewController {
         
     }
 
-    @IBAction func updateBadge(_ sender: UIButton) {
+    @IBAction func updateBadgeBtnPressed(_ sender: UIButton) {
+        //MARK: - UITabBarItem
         let item = tabBarItem
         item?.badgeValue = String(counter)
         counter += 1
+    }
+    
+    @IBAction func showNextViewBtnPressed(_ sender: UIButton) {
+        //Only need to do is to set value on the SecondViewController
+        //Don't need to perform segue here
+        //Because, TabBarController will do that.
+        //There are different mission. One is about Data, the other is about segue.
+        let list = tabBarController?.viewControllers!
+        let controller = list?[1] as! SecondViewController
+        controller.myProperty = 0
     }
 }
 
