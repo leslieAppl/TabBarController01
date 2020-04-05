@@ -51,3 +51,14 @@ the other is about Segue ViewController in the UITabBarController!!
 
 - Implemented UITabBarController Delegate method - shouldSelect viewController
 
+- Switch tab programmatically
+        
+        @IBAction func notShowSelfBtnPressed(_ sender: UIButton) {
+            myProperty = 1
+            print(myProperty)
+            
+            //Switch tab programmatically
+            tabBarController?.selectedIndex = 0
+        }
+
+

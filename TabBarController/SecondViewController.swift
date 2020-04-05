@@ -31,6 +31,9 @@ class SecondViewController: UIViewController {
     @IBAction func notShowSelfBtnPressed(_ sender: UIButton) {
         myProperty = 1
         print(myProperty)
+        
+        //Switch tab programmatically
+        tabBarController?.selectedIndex = 0
     }
     
     /*
