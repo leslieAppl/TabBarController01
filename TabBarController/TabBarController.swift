@@ -12,7 +12,7 @@ class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //MARK: - UITabBarController Delegate
+        //MARK: UITabBarController Delegate
         delegate = self
         
         //MARK: - UITabBar
